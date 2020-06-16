@@ -1,0 +1,10 @@
+<template>
+    <div style="background: white;">
+        <template for:each={todoVideos} for:item="video">
+            <div key={video.id} class="sfdcfacts-card">
+                <span class="sfdcfacts-card-title">{video.title}</span>
+                <p class="sfdcfacts-card-desc">{video.description}</p>
+            </div>
+        </template>
+    </div>
+</template>

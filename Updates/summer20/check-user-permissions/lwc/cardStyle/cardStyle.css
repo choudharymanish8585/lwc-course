@@ -1,0 +1,23 @@
+.sfdcfacts-card {
+    padding: 1rem;
+    background: gold;
+    border-radius: 4px;
+    margin: .5rem;
+    transition: .5s all;
+}
+
+.sfdcfacts-card-title {
+    font-size: large;
+    color: darkblue;
+    text-transform: uppercase;
+}
+
+.sfdcfacts-card-desc {
+    margin-top: 8px;
+    font-style: normal;
+    color: #161920;
+}
+
+.sfdcfacts-card:hover {
+    background: aliceblue;
+}

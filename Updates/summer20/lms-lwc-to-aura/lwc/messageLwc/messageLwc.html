@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Message Channel LWC">
+        <div class="slds-p-around_medium">
+            <!--Iterate over the list-->
+            <template for:each={messages} for:item="message">
+                <div key={message.id} class="message">
+                    {message.from} > {message.value}
+                </div>
+            </template>
+        </div>
+        <div class="slds-p-around_medium">
+            <lightning-layout>
+                <lightning-layout-item size="9" class="slds-m-right_medium">
+                    <lightning-input type="text" variant="label-hidden">
+
+                    </lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" class="slds-m-right_medium">
+                    <lightning-button label="Send" icon-name="utility:send" variant="brand" onclick={sendHandler}>
+                    </lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+</template>
